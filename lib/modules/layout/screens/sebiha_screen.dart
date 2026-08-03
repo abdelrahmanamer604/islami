@@ -14,18 +14,13 @@ class SebihaScreen extends StatefulWidget {
 }
 
 class _SebihaScreenState extends State<SebihaScreen> {
-
   double angle = 0;
 
   int counter = 0;
 
   int zekrIndex = 0;
 
-  List<String> azkar = [
-    "سبحان الله",
-    "الحمد لله",
-    "الله أكبر",
-  ];
+  List<String> azkar = ["سبحان الله", "الحمد لله", "الله أكبر"];
 
   void onSebihaTap() {
     setState(() {
@@ -38,6 +33,7 @@ class _SebihaScreenState extends State<SebihaScreen> {
       }
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -46,66 +42,51 @@ class _SebihaScreenState extends State<SebihaScreen> {
         body: Stack(
           children: [
             Positioned.fill(
-                child: Image.asset(AppAssets.bgSebiha,
-                fit: BoxFit.cover,
-                ),
+              child: Image.asset(AppAssets.bgSebiha, fit: BoxFit.cover),
             ),
             const BackgroundGradient(),
-         SafeArea(
-           child: Column(
-             children: [
-               Image.asset(AppAssets.logoText,width: 430.w,),
-               Text(
-                 AppStrings.tasbih,
-                 style: AppTextStyles.tasbih,
-               ),
-                SizedBox(height: 16.h),
-      
-               Stack(
-                 alignment: Alignment.topCenter,
-                 children: [
-                   Padding(
-                     padding:  EdgeInsets.only(top:75.h),
-                     child: GestureDetector(
-                       onTap: onSebihaTap,
-                       child: AnimatedRotation(
-                         turns: angle,
-                         duration: const Duration(milliseconds: 200),
-                         child: Image.asset(
-                           AppAssets.sebihaBody,
-                           width: 379.w,
-                         ),
-                       ),
-                     ),
-                   ),
-      
-                   Image.asset(
-                     AppAssets.sebihaHead,
-                     width: 145.w,
-                   ),
-                   Column(
-                     children: [
-                        SizedBox(height: 229.h),
-      
-                       Text(
-                         azkar[zekrIndex],
-                         style: AppTextStyles.zekr,
-                         ),
+            SafeArea(
+              child: Column(
+                children: [
+                  Image.asset(AppAssets.logoText, width: 430.w),
+                  Text(AppStrings.tasbih, style: AppTextStyles.tasbih),
+                  SizedBox(height: 16.h),
 
-                       SizedBox(height: 10.h),
-      
-                       Text(
-                         "$counter",
-                         style: AppTextStyles.zekr,
-                       ),
-                     ],
-                   ),
-                 ],
-               ),
-      
-             ],
-           ),
-         ),
+                  Stack(
+                    alignment: Alignment.topCenter,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(top: 75.h),
+                        child: GestureDetector(
+                          onTap: onSebihaTap,
+                          child: AnimatedRotation(
+                            turns: angle,
+                            duration: const Duration(milliseconds: 200),
+                            child: Image.asset(
+                              AppAssets.sebihaBody,
+                              width: 379.w,
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      Image.asset(AppAssets.sebihaHead, width: 145.w),
+                      Column(
+                        children: [
+                          SizedBox(height: 229.h),
+
+                          Text(azkar[zekrIndex], style: AppTextStyles.zekr),
+
+                          SizedBox(height: 10.h),
+
+                          Text("$counter", style: AppTextStyles.zekr),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

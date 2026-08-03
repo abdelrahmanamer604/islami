@@ -2,7 +2,6 @@ import 'package:islami/core/constants/app_assets.dart';
 import 'package:islami/core/constants/app_strings.dart';
 import 'package:islami/modules/intro/models/intro_model.dart';
 
-
 List<IntroModel> onboardingPages = [
   IntroModel(
     image: AppAssets.intro1,

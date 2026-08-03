@@ -8,11 +8,7 @@ class RadioItem extends StatelessWidget {
   final String title;
   final bool isPlaying;
 
-  const RadioItem({
-    super.key,
-    required this.title,
-    this.isPlaying = false,
-  });
+  const RadioItem({super.key, required this.title, this.isPlaying = false});
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +16,7 @@ class RadioItem extends StatelessWidget {
       borderRadius: BorderRadius.circular(20.r),
       child: Container(
         height: 141.h,
-        decoration: const BoxDecoration(
-          color: AppColors.gold,
-        ),
+        decoration: const BoxDecoration(color: AppColors.gold),
         child: Stack(
           children: [
             Positioned(
@@ -32,9 +26,7 @@ class RadioItem extends StatelessWidget {
               child: AnimatedSwitcher(
                 duration: const Duration(milliseconds: 300),
                 child: Image.asset(
-                  isPlaying
-                      ? AppAssets.soundWave
-                      : AppAssets.soundRadio,
+                  isPlaying ? AppAssets.soundWave : AppAssets.soundRadio,
                   key: ValueKey(isPlaying),
                   width: double.infinity,
                   fit: BoxFit.fill,
@@ -43,10 +35,7 @@ class RadioItem extends StatelessWidget {
             ),
 
             Padding(
-              padding: EdgeInsets.symmetric(
-                horizontal: 20.w,
-                vertical: 16.h,
-              ),
+              padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 16.h),
               child: Column(
                 children: [
                   Text(

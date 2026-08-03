@@ -49,26 +49,11 @@ class _LayoutScreenState extends State<LayoutScreen> {
           });
         },
         items: [
-          getNavItem(
-            icon: AppAssets.quran,
-            label: AppStrings.quran,
-          ),
-          getNavItem(
-            icon: AppAssets.hadeth,
-            label: AppStrings.hadeth,
-          ),
-          getNavItem(
-            icon: AppAssets.sebiha,
-            label: AppStrings.sebiha,
-          ),
-          getNavItem(
-            icon: AppAssets.radio,
-            label: AppStrings.radio,
-          ),
-          getNavItem(
-            icon: AppAssets.salaah,
-            label: AppStrings.salaah,
-          ),
+          getNavItem(icon: AppAssets.quran, label: AppStrings.quran),
+          getNavItem(icon: AppAssets.hadeth, label: AppStrings.hadeth),
+          getNavItem(icon: AppAssets.sebiha, label: AppStrings.sebiha),
+          getNavItem(icon: AppAssets.radio, label: AppStrings.radio),
+          getNavItem(icon: AppAssets.salaah, label: AppStrings.salaah),
         ],
       ),
     );
@@ -79,16 +64,9 @@ class _LayoutScreenState extends State<LayoutScreen> {
     required String label,
   }) {
     return BottomNavigationBarItem(
-      icon: Image.asset(
-        icon,
-        width: 24.w,
-        height: 24.h,
-      ),
+      icon: Image.asset(icon, width: 24.w, height: 24.h),
       activeIcon: Container(
-        padding: EdgeInsets.symmetric(
-          horizontal: 20.w,
-          vertical: 6.h,
-        ),
+        padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 6.h),
         decoration: BoxDecoration(
           color: AppColors.black.withValues(alpha: 0.6),
           borderRadius: BorderRadius.circular(66.r),

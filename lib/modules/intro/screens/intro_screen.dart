@@ -4,7 +4,7 @@ import 'package:islami/core/constants/app_strings.dart';
 import 'package:islami/core/theme/app_colors.dart';
 import 'package:islami/core/theme/app_text_styles.dart';
 import 'package:islami/modules/intro/widgets/intro_item.dart';
-import 'package:islami/modules/layout/screens/layout_screen.dart';
+import 'package:islami/modules/layout/layout_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../models/intro_data.dart';
@@ -35,7 +35,7 @@ class _IntroScreenState extends State<IntroScreen> {
       backgroundColor: AppColors.black,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.only(left: 16,bottom: 16,right: 16),
+          padding: const EdgeInsets.only(left: 16, bottom: 16, right: 16),
           child: Column(
             children: [
               Expanded(
@@ -68,7 +68,7 @@ class _IntroScreenState extends State<IntroScreen> {
                               curve: Curves.easeInOut,
                             );
                           },
-                    child:  Text(
+                    child: Text(
                       AppStrings.back,
                       style: AppTextStyles.introButton,
                     ),

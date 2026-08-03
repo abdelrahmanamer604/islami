@@ -45,10 +45,7 @@ class _RadioScreenState extends State<RadioScreen> {
             left: 0.h,
             right: 0.h,
             bottom: 0.h,
-            child: Image.asset(
-              AppAssets.bgRadio,
-              fit: BoxFit.cover,
-            ),
+            child: Image.asset(AppAssets.bgRadio, fit: BoxFit.cover),
           ),
 
           const BackgroundGradient(),
@@ -56,15 +53,12 @@ class _RadioScreenState extends State<RadioScreen> {
           SafeArea(
             child: Column(
               children: [
-                Image.asset(
-                  AppAssets.logoText,
-                  width: 291.w,
-                ),
+                Image.asset(AppAssets.logoText, width: 291.w),
 
-                 SizedBox(height: 7.h),
+                SizedBox(height: 7.h),
 
                 Container(
-                  margin:  EdgeInsets.symmetric(horizontal: 20.w),
+                  margin: EdgeInsets.symmetric(horizontal: 20.w),
                   decoration: BoxDecoration(
                     color: AppColors.black,
                     borderRadius: BorderRadius.circular(12.r),
@@ -99,20 +93,20 @@ class _RadioScreenState extends State<RadioScreen> {
                   ),
                 ),
 
-                 SizedBox(height: 12.h),
+                SizedBox(height: 12.h),
 
                 Expanded(
                   child: ListView.separated(
                     physics: const BouncingScrollPhysics(),
-                    padding:  EdgeInsets.symmetric(horizontal: 20.w),
+                    padding: EdgeInsets.symmetric(horizontal: 20.w),
                     itemCount: currentList.length,
-                    separatorBuilder: (context, index) => const SizedBox(height: 16),
+                    separatorBuilder: (context, index) =>
+                        const SizedBox(height: 16),
                     itemBuilder: (context, index) {
                       return GestureDetector(
                         onTap: () {
                           setState(() {
-                            playingIndex =
-                            playingIndex == index ? -1 : index;
+                            playingIndex = playingIndex == index ? -1 : index;
                           });
                         },
                         child: RadioItem(

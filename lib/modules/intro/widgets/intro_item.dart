@@ -21,27 +21,15 @@ class IntroItem extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 20.w),
       child: Column(
         children: [
-          Image.asset(
-            AppAssets.logoText,
-            width: 290.w,
-          ),
+          Image.asset(AppAssets.logoText, width: 290.w),
 
           SizedBox(height: 30.h),
 
-          Expanded(
-            child: Image.asset(
-              image,
-              fit: BoxFit.contain,
-            ),
-          ),
+          Expanded(child: Image.asset(image, fit: BoxFit.contain)),
 
           SizedBox(height: 20.h),
 
-          Text(
-            title,
-            style: AppTextStyles.title,
-            textAlign: TextAlign.center,
-          ),
+          Text(title, style: AppTextStyles.title, textAlign: TextAlign.center),
 
           SizedBox(height: 16.h),
 

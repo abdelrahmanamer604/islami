@@ -29,6 +29,63 @@ class AppTextStyles {
     fontWeight: FontWeight.w700,
   );
 
+  static TextStyle searchHint = TextStyle(
+    fontFamily: "Janna",
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w700,
+    color: AppColors.white,
+  );
+
+  static TextStyle recently = TextStyle(
+    fontFamily: "Janna",
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w700,
+    color: AppColors.white,
+  );
+
+  static TextStyle recentEnglish = TextStyle(
+    fontFamily: "Janna",
+    fontSize: 24.sp,
+    fontWeight: FontWeight.w700,
+    color: AppColors.black,
+  );
+
+  static TextStyle recentArabic = TextStyle(
+    fontFamily: "Janna",
+    fontSize: 24.sp,
+    fontWeight: FontWeight.w700,
+    color: AppColors.black,
+  );
+
+  static TextStyle verses = TextStyle(
+    fontFamily: "Janna",
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w700,
+    color: AppColors.black,
+  );
+
+  static TextStyle suraList = TextStyle(
+    fontFamily: "Janna",
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w700,
+    color: AppColors.white,
+  );
+
+  static TextStyle hadethTitle = TextStyle(
+    fontFamily: "Janna",
+    fontSize: 24.sp,
+    fontWeight: FontWeight.w700,
+    color: AppColors.black,
+  );
+
+  static TextStyle hadethContent = TextStyle(
+    fontFamily: "Janna",
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w700,
+    color: AppColors.black,
+    height: 2,
+  );
+
   static TextStyle tasbih = TextStyle(
     fontFamily: "Janna",
     fontSize: 36.sp,
@@ -48,7 +105,7 @@ class AppTextStyles {
     fontSize: 20.sp,
     fontWeight: FontWeight.w700,
     color: AppColors.black,
-      height: 1.1
+    height: 1.1,
   );
 
   static TextStyle radioTab = TextStyle(

@@ -11,7 +11,8 @@ class AppStrings {
   static const bearishDesc = "Praise the name of your Lord, the Most High";
 
   static const radioTitle = "Holy Quran Radio";
-  static const radioDesc = "You can listen to the Holy Quran Radio through the application for free and easily";
+  static const radioDesc =
+      "You can listen to the Holy Quran Radio through the application for free and easily";
 
   static const next = "Next";
   static const back = "Back";
@@ -22,6 +23,13 @@ class AppStrings {
   static const String sebiha = "Sebiha";
   static const String radio = "Radio";
   static const String salaah = "Salaah";
+
+  static const String suraName = "Sura Name";
+  static const String recently = "Most Recently";
+  static const String suraList = "Suras List";
+  static const String verses = "Verses";
+
+  static const String hth = "Hadeth";
 
   static const String tasbih = "سَبِّحِ اسْمَ رَبِّكَ الأعلى ";
 
